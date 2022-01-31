@@ -117,7 +117,7 @@ namespace DataBase
             values.Clear();
         }
 
-        public static void Update<T>(this SqlConnection con, T obj, string Restraints, params object[] args) where T : class, new()//전체데이터 업데이트.
+        public static void Update<T>(this SqlConnection con, T obj, string Restraints, params object[] args) where T : class, new()
         {
             if (con.State == System.Data.ConnectionState.Closed)
                 con.Open();
