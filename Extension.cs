@@ -9,7 +9,7 @@ namespace DataBase
     public static class Extension
     {
 	public static void Hello()
-	{ //added
+	{ //add
 	    Console.WriteLine("Hello");
 	}
 
