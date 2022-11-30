@@ -8,6 +8,11 @@ namespace DataBase
 {
     public static class Extension
     {
+	public static void Hello()
+	{ //added
+	    Console.WriteLine("Hello");
+	}
+
         public static T ToObject<T>(this SqlDataReader dr) where T : class, new()
         {
             dr.Read();
